@@ -10,11 +10,6 @@ if($mode==='select') {
      $param = ["s", 'amw.anooppatidar@gmail.com'];
        
      $data = $conn->select($sql,$param); 
-     
-     echo '<pre>';
-     print_r($data);
-     exit;
-
     if($data )
      {
        $_SESSION['username'] = $name; 
